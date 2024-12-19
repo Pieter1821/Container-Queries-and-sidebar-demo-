@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Layout Demo</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="layout">
+        <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+        <label for="sidebar-toggle" class="sidebar-toggle-label">
+            <span class="toggle-icon"></span>
+        </label>
+
+        <header class="header">
+            <h1>Modern Layout Demo</h1>
+            <nav class="header-nav">
+                <a href="#" class="active">Home</a>
+            </nav>
+        </header>
+
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <h2>Navigation</h2>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Container Queries</h3>
+                    <p>This card adapts its layout based on its container width, not the viewport width.</p>
+                </div>
+                <div class="card">
+                    <h3>Modern CSS Grid</h3>
+                    <p>Using CSS Grid for both page-level and component-level layouts provides flexibility and control.</p>
+                </div>
+                <div class="card">
+                    <h3>CSS Variables</h3>
+                    <p>Custom properties make theming and maintaining consistent styles across components easy.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

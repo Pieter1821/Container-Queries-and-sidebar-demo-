@@ -1,0 +1,21 @@
+@import 'variables.css';
+
+.layout {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar main";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: var(--header-height) 1fr;
+    min-height: 100vh;
+    container-type: inline-size;
+}
+
+@media (max-width: 768px) {
+    .layout {
+        grid-template-areas: 
+            "header"
+            "main";
+        grid-template-columns: 1fr;
+    }
+}
